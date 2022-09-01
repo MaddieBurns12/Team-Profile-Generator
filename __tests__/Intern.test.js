@@ -32,3 +32,17 @@ describe('tests inherited employee functions', () => {
         expect(intern.getEmail()).toEqual(intern.email)
     })
 })
+
+describe('tests getSchool', () => {
+    const intern = new Intern();
+    it('should return intern school', () => {
+        expect(intern.getSchool()).toEqual(intern.school)
+    })
+    });
+
+describe('tests getRole', () => {
+    const intern = new Intern();
+    it('should return updated employee role', () => {
+        expect(intern.getRole()).toEqual('intern')
+    })
+    });
