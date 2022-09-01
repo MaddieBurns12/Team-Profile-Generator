@@ -12,7 +12,7 @@ describe('sets engineer', () => {
       it('prints employee email', () => {
         expect(email).toBe('dave2@example.com');
       });
-      it('prints employee github', () => {
+      it('prints engineer github', () => {
         expect(github).toBe('davegitexample@github.com');
     })
     });
@@ -31,10 +31,7 @@ describe('tests inherited employee functions', () => {
         const engineer = new Engineer();
         expect(engineer.getEmail()).toEqual(engineer.email)
     })
-    it('should return engineer role', () => {
-        const engineer = new Engineer();
-        expect(engineer.getRole()).toEqual('engineer')
-    })
+
 })
 
 describe('tests getGithub', () => {
