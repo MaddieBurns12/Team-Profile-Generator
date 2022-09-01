@@ -32,3 +32,17 @@ describe('tests inherited employee functions', () => {
         expect(manager.getEmail()).toEqual(manager.email)
     })
 })
+
+describe('tests getOffice', () => {
+    const manager = new Manager();
+    it('should return manager office number', () => {
+        expect(manager.getOffice()).toEqual(manager.office)
+    })
+    });
+
+describe('tests getRole', () => {
+    const manager = new Manager();
+    it('should return updated employee role', () => {
+        expect(manager.getRole()).toEqual('manager')
+    })
+    });
