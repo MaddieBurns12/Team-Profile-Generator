@@ -1,7 +1,7 @@
 const Employee = require('../lib/Employee');
 describe('sets employee', () => {
     const employee = new Employee('Dave', 1, 'dave@example.com', 'employee');
-    let { name: name, id: id, email: email, role: role} = employee
+    let { name, id, email, role} = employee
     describe('sets employee settings', () => {
       it('prints employee name', () => {
         expect(name).toBe('Dave');
@@ -11,9 +11,6 @@ describe('sets employee', () => {
       });
       it('prints employee email', () => {
         expect(email).toBe('dave@example.com');
-      });
-      it('prints employee role', () => {
-        expect(role).toBe('employee');
       });
     });
 });
@@ -38,6 +35,6 @@ describe('tests getEmail', () => {
 describe('tests getRole', () => {
     const employee = new Employee();
     it('should return employee role', () => {
-        expect(employee.getRole()).toEqual(employee.role)
+        expect(employee.getRole()).toEqual('employee')
     })
     });
